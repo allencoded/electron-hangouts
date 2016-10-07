@@ -1,0 +1,18 @@
+{
+  "name": "hangouts",
+  "productName": "hangouts",
+  "version": "0.0.1",
+  "description": "Hangouts as an application",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron . hangouts",
+    "build-mac": "electron-packager --platform=darwin --arch=x64 --version=1.4.3 . Hangouts --ignore=node_modules/electron-*,node_modules/asar --icon ./images/mic.icns --overwrite",
+    "build-win": "electron-packager --platform=win32 --arch=x64 --version=1.4.3 . Hangouts --ignore=node_modules/electron-*,node_modules/asar --icon ./images/mic.ico"
+  },
+  "author": "Allen Hendricks",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^1.4.1"
+  },
+  "dependencies": {}
+}
